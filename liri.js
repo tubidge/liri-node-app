@@ -34,8 +34,6 @@ function concertSearch() {
         var url = `https://rest.bandsintown.com/artists/${artist}/events?app_id=codingbootcamp`;
         axios.get(url).then(
             function (resp) {
-                console.log(url)
-                console.log(resp.data.length);
                 for (var i = 0; i < resp.data.length; i++) {
                     console.log(`\n------ Concert # ${i} ------`)
                     console.log(`Venue: ${resp.data[i].venue.name}`);
@@ -93,7 +91,6 @@ function movieSearch() {
         axios.get(url).then(
             function (resp) {
                 if (resp.data["Title"]) {
-                    console.log(url);
                     console.log(`Title: ${resp.data["Title"]}`);
                     console.log(`Release Year: ${resp.data["Year"]}`);
                     console.log(`IMDB Rating: ${resp.data["Ratings"][0]["Value"]}`);
@@ -128,7 +125,6 @@ function doWhatItSays() {
             return console.log(err)
         }
         var output = data.split(",");
-        console.log(output[0]);
         spotify.search({
             type: "track",
             query: output[1],
