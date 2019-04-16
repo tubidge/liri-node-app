@@ -35,7 +35,7 @@ function concertSearch() {
         axios.get(url).then(
             function (resp) {
                 for (var i = 0; i < resp.data.length; i++) {
-                    console.log(`\n------ Concert # ${i} ------`)
+                    console.log(`\n------ Concert # ${i + 1} ------`)
                     console.log(`Venue: ${resp.data[i].venue.name}`);
                     console.log(`Location: ${resp.data[i].venue.city}, ${resp.data[i].venue.region}, ${resp.data[i].venue.country}`);
                     var date = resp.data[i].datetime;
