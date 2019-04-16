@@ -11,10 +11,10 @@ Give LIRI the name of a musical band or artist to see a listing of upcoming conc
 Give LIRI the name of a song to see information about it:
 <img src="/readme/spotify-this-song-response.PNG">
 
-3. movie-this
+3. [movie-this]
 Give LIRI the name of a movie to see information about it:
 <img src="/readme/movie-this-response.PNG">
 
-4. do-what-it-says
+4. [do-what-it-says]
 Don't ask questions, just do what it says:
 <img src="/readme/do-what-it-says-response.PNG">
