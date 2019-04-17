@@ -15,6 +15,8 @@ SPOTIFY_SECRET=your-spotify-secret
 * Lastly, don't forget to `npm install` to install the necessary node packages.
 
 
+
+
 1. When running liri.js, you will be presented with 4 input options: concert-this, spotify-this-song, movie-this, and do-what-it-says:
 <img src="/readme/initial-inquiry.PNG">
 
