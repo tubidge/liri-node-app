@@ -38,7 +38,7 @@ function concertSearch() {
                     console.log(`\n------ Concert # ${i + 1} ------`)
                     console.log(`Venue: ${resp.data[i].venue.name}`);
                     console.log(`Location: ${resp.data[i].venue.city}, ${resp.data[i].venue.region}, ${resp.data[i].venue.country}`);
-                    var date = resp.data[i].datetime;
+                    var date = moment(resp.data[i].datetime).format("MMMM Do YYYY");
                     console.log(`Date: ${date}`);
                 }
             }
